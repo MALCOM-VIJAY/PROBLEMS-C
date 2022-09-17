@@ -1,0 +1,75 @@
+//Using simple if else:
+#include<stdio.h>
+int main()
+{
+    int a=10,b=10,c=10,max;//change the values
+    if(a==b && b==c && c==a ){
+        printf("All are equal");
+    }
+    else if(a>b && a>c){
+        printf("%d",a);
+    }
+    else{
+        if(b>c){
+             printf("%d",b);
+        }
+        else{
+            printf("%d",c);
+        }
+    }
+
+    return 0;
+}
+
+
+//using (goto)
+
+#include <stdio.h>
+
+int main()
+{
+    int a=10,b=10,c=10,max;
+    if (a==b && b==c && c==a ){
+        printf("All are equal");
+        goto final;
+    }
+    else if(a>b && a>c){
+        max = a;
+    }
+    else{
+        if(b>c){
+            max=b;
+        }
+        else{
+            max = c;
+        }
+    }
+    printf("%d",max);
+    final:       //used to stop printing garbage value
+
+    return 0;
+}
+//Drawback if 3 inputs are same it shows 2nd number is largest.Such that B is largest.
+#include <stdio.h>
+int main()
+{
+    int A, B, C; 
+    printf("Enter three numbers: ");
+    scanf("%d %d %d", &a, &b, &c);
+    if (a >= b) {
+        if (a >= c)
+            printf("%d is the largest number.", a);
+        else
+            printf("%d is the largest number.", c);
+    }
+    else {
+        if (b >= c)
+            printf("%d is the largest number.", b);
+        else
+            printf("%d is the largest number.", c);
+    }
+    return 0;
+}
+//condtional operator : Same Drawback 
+1. a>b ? (a>c ? a:c) : (b>c ? b:c)
+2. a>b && a>c ? a : b>c ? b : c;
