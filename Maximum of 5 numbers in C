@@ -1,0 +1,10 @@
+//Conditional operator:
+#include <stdio.h>
+
+int main(){
+float a,b,c,d,e;
+printf("enter values");
+scanf("%f %f %f %f %f", &a,&b,&c, &d, &e);
+int max= (a>b&&a>c&&a>d&&a>e)?a:(b>c&&b>d&&b>e)?b:(c>d&&c>e)?c:(d>e)? d:e;
+printf("%d",max);
+}
