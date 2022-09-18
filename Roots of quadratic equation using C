@@ -1,0 +1,50 @@
+#include <stdio.h>
+
+int main()
+{
+    float a,b,c,r_or_i;
+    printf("Enter the values of a,b,c :");
+    scanf("%f%f%f",&a,&b,&c);
+    r_or_i= b*b-4*a*c;
+    if(r_or_i>0){
+        printf("Roots are real and different");
+    }
+    else if (r_or_i==0){
+        printf("Roots are real and equal");
+    }
+    else{
+        printf("Roots are imaginary");
+    }
+    
+}
+*****************************************
+
+//For the values to be displayed :
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    float a,b,c,r_or_i,x1,x2,realprt,imgprt;
+    printf("Enter the values of a,b,c :");
+    scanf("%f%f%f",&a,&b,&c);
+    r_or_i= b*b-4*a*c;
+    if(r_or_i>0){
+        x1= (-b + sqrt(r_or_i))/2*a;
+        x2= (-b - sqrt(r_or_i))/2*a;
+        printf("Roots are real and different\n");
+        printf("Root 1 : %f and Root 2 : %f",x1,x2);
+    }
+    else if (r_or_i==0){
+        x1=-b/2*a;
+        printf("Roots are real and equal\n");
+        printf("Root1 and Root2 : %f",x1);
+    }
+    else{
+        realprt=-b/(2*a);
+        imgprt=sqrt(-r_or_i)/(2*a);
+        printf("Roots are imaginary\n");
+        printf("%f+%fi\n",realprt,imgprt);
+        printf("%f-%fi",realprt,imgprt);
+    }
+    
+}
