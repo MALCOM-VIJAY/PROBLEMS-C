@@ -43,3 +43,11 @@ int main()
     return 0;
 }
 
+//Another method:
+main(){
+int a;
+scanf("%d", &a);
+
+a%2?printf("a is odd"):printf("a is even");
+}
+
