@@ -1,0 +1,37 @@
+//Using division :
+#include<stdio.h>
+
+int main(){
+    int a;
+    scanf("%d",&a);
+    if(a/10==0){
+        printf("It is a single digit");
+    }
+    else{
+        printf("It is a multidigit");
+    }
+}
+******************************************************
+
+//Using normal logical operators :
+#include<stdio.h>
+int main(){
+int a;
+scanf("%d",&a);
+if(a>=-9 && a<=9)
+printf("It is a single digit number");
+else
+printf("It is a multi digit number");
+return 0;
+}
+********************************************************
+//Using modulus operator
+#include<stdio.h>
+int main(){
+int a;
+scanf("%d",&a);
+if(a%10==a)
+printf("It is a single digit number");
+else
+printf("It is a multi digit number");
+}
