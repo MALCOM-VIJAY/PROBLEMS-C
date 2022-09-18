@@ -1,5 +1,17 @@
 //Using simple if else:
 #include<stdio.h>
+int main(){
+int a=10,b=5,c=4;
+if(a>b && a>c)
+printf("%d",a);
+if(b>a && b>c)
+printf("%d", b);
+if(c>a && c>b)
+printf("%d", c);
+
+
+//Another method
+#include<stdio.h>
 int main()
 {
     int a=10,b=10,c=10,max;//change the values
@@ -20,6 +32,7 @@ int main()
 
     return 0;
 }
+***************************************************************
 
 
 //using (goto)
@@ -49,6 +62,7 @@ int main()
 
     return 0;
 }
+**************************************************************************
 //Drawback if 3 inputs are same it shows 2nd number is largest.Such that B is largest.
 #include <stdio.h>
 int main()
@@ -70,6 +84,7 @@ int main()
     }
     return 0;
 }
+***********************************************************************
 //condtional operator : Same Drawback 
 1. a>b ? (a>c ? a:c) : (b>c ? b:c)
 2. a>b && a>c ? a : b>c ? b : c;
