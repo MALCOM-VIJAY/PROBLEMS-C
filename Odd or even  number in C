@@ -1,0 +1,34 @@
+//Using if and else and assingment operator:
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    printf("Enter a and b values : ");
+    scanf("%d",&a);
+    if(a%2==0){
+        printf("%d is an even number.",a);
+        
+    }
+    else{
+        printf("%d is an odd number.",a);
+    }
+}
+***************************************************
+//Using if and else without assingment operator :
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    printf("Enter a and b values : ");
+    scanf("%d",&a);
+    if(a%2){
+        printf("%d is an odd number.",a);
+        
+    }
+    else{
+        printf("%d is an even number.",a);
+    }
+}
+
