@@ -10,7 +10,7 @@ if(c>a && c>b)
 printf("%d", c);
 
 
-//Another method
+//Another method //****************BETTER TIME COMPLEXITY************************//
 #include<stdio.h>
 int main()
 {
