@@ -31,4 +31,15 @@ int main()
         printf("%d is an even number.",a);
     }
 }
+**************************************************
+//Using conditional operator :
+#include <stdio.h>
+
+int main()
+{
+     int x,y;
+     scanf("%d",&x);
+     y = x%2==0 ? printf("It is even number") : printf("It is odd number");
+    return 0;
+}
 
