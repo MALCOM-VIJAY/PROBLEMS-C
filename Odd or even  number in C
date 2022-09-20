@@ -1,3 +1,19 @@
+//Using bitwise operators:
+#include <stdio.h>
+
+int main()
+{
+    int a,b;
+    scanf("%d",&a);
+    if((a & 1)==0){
+        printf("EVEN");
+    }
+    else{
+        printf("ODD");
+    }
+}
+*********************************************************
+
 //Using if and else and assingment operator:
 #include <stdio.h>
 
