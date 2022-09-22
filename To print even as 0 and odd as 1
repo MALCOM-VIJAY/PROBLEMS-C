@@ -1,0 +1,53 @@
+//simple method
+include <stdio.h>
+
+int main()
+{
+    int a=1;
+    while(a<=5){
+        printf("%d\n",a%2);
+        a++;
+        
+    }
+    return 0;
+}
+***************************************************
+
+//using if else
+#include <stdio.h>
+
+int main()
+{
+    int a=1;
+    while(a<=5){
+        if(a%2==0){
+            printf("0");
+        }
+        else{
+            printf("1");
+        }
+        a++;
+        
+    }
+    return 0;
+}
+***************************************************
+
+//not logic
+#include <stdio.h>
+
+int main()
+{
+    int a,k;
+    a=k=1;
+    while(a<=5){
+        printf("%d",k);
+        k = !k;
+        a++;
+        
+    }
+    return 0;
+}
+****************************************************
+
+
