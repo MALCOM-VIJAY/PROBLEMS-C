@@ -1,6 +1,5 @@
 //loop
 #include <stdio.h>
-
 int main()
 {
     int p=0,c=1,d,next;
@@ -14,4 +13,22 @@ int main()
         
     }
     
+}
+********************************************
+
+//loop
+#include <stdio.h>
+
+int main()
+{
+    int p=0,c=1,d,i=1,next;
+    scanf("%d",&d);
+    printf("%d %d ",p,c);
+    while(i<=d-2){
+        next = p+c;
+        printf("%d ",next);
+        p=c;
+        c= next;
+        i++;   
+    }   
 }
