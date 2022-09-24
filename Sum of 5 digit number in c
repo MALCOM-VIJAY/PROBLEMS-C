@@ -1,0 +1,40 @@
+//Using normal logic
+#include<stdio.h>
+int main(){
+    int Input,a,b,c,d,e,f,g,h,i,j,sum;
+    printf("Enter the no :");//12345
+    scanf("%d",&Input);
+    a = Input/10;//1234
+    b = Input%10;//5
+    c = a/10;//123
+    d = a%10;//4
+    e = c/10;//12
+    f = c%10;//3
+    g = e/10;//1
+    h = e%10;//2
+    i = g/10;//0
+    j = g%10;//1
+    sum = b+d+f+h+j;
+    printf ("The final sum is : %d",sum);
+    
+    
+
+    return 0;
+}
+**********************************************************
+//logic using loop
+#include<stdio.h>
+int main(){
+    int n,sum=0;
+    scanf("%d",&n);
+    while(n>0){
+        int a;
+        a = n%10;
+        sum+=a;
+        printf("%d",a);
+        n = n/10;
+        
+    }
+    printf("\nTotal sum : %d",sum);
+    return 0;
+}
