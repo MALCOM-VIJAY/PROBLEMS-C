@@ -42,7 +42,7 @@ int main()
     a=k=1;
     while(a<=5){
         printf("%d",k);
-        k = !k;
+        k = !k;//k=1-k;
         a++;
         
     }
