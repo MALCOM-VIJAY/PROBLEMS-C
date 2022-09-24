@@ -1,0 +1,17 @@
+//loop
+#include <stdio.h>
+
+int main()
+{
+    int p=0,c=1,d,next;
+    scanf("%d",&d);
+    printf("%d %d ",p,c);
+    for(int i=2;i<d;i++){
+        next = p+c;
+        printf("%d ",next);
+        p=c;
+        c= next;
+        
+    }
+    
+}
