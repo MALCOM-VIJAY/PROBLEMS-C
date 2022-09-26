@@ -1,0 +1,52 @@
+#include <stdio.h>
+int main()
+{
+    int i=1;
+    char x='A';
+    while(i<=5){
+        int j=1;
+        while(j<=5){
+            printf("%c",x);
+            j++;
+            x++;
+        }
+        printf("\n");
+        i++;
+    }
+    return 0;
+}
+OUTPUT:
+ABCDE
+FGHIJ
+KLMNO
+PQRST
+UVWXY
+*********************************************************
+int j=1;
+        while(j<=i){
+            printf("%c",x);
+            j++;
+            x++;
+        }//Inner loop changes :
+Output:
+A
+BC
+DEF
+GHIJ
+KLMNO
+*******************************************************
+int j=1;
+        char x='A';
+        while(j<=5){
+            printf("%c",x);
+            j++;
+            x++;
+        }//Inner loop changes:
+Output:
+ABCDE
+ABCDE
+ABCDE
+ABCDE
+ABCDE
+********************************************************
+
