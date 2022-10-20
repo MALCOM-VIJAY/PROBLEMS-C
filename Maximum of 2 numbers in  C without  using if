@@ -1,3 +1,12 @@
+//using short circuit operators
+#include <stdio.h>
+int main(){
+    int a=20,b=30,max;
+    max=a;
+    b>a && (max=b);
+    printf("%d",max);
+    return 0;
+}
 //Using relational operator:
 #include <stdio.h>
 int main(){
