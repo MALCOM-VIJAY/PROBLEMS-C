@@ -1,0 +1,48 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cout<<"Enter the three digit number : ";
+    cin>>n;
+    int t,c=0,k;
+    k=n;
+    while(n>0){
+        t = n%10;
+        c += t*t*t;
+        n = n/10;
+    }
+    if(k == c){
+        cout<<c <<" == "<<k<<",it is an armstrong number";
+    }
+    else{
+        cout<<"Not an armstrong number";
+    }
+    return 0;
+}
+*************************************
+//print from 100 to 999
+#include<iostream>
+using namespace std;
+int main()
+{
+    int sum=0,n,t,r;
+  for(int i=100;i<=999;i++)
+  {
+ 
+    n=i;
+    while(n>0)//153  15
+    {
+        r=n%10;//3  5 1
+        sum=sum+(r*r*r);//27 + 125=>152+1
+        n=n/10;//15  1 0
+    }
+    if(sum==i)
+    {
+        cout<<i<<endl;
+    }
+    sum=0;
+  }
+    return 0;
+}
+ 
