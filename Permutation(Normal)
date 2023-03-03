@@ -1,0 +1,18 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n=5,r=2;
+    int safe=n,val=1,val1=1;
+    while(n){
+        val*=n;
+        n=n-1;
+    }
+    safe=safe-r;
+    while(safe){
+        val1*=safe;
+        safe=safe-1;
+    }
+    cout<<val/val1;
+    return 0;
+}
