@@ -1,0 +1,85 @@
+#include<stdio.h>
+int main(){
+    int a;
+    scanf("%d",&a);
+    int t=1,k=0;
+    for(int i=1;i<=a;i++){
+        if(i%2!=0){
+            for(int j=1;j<=i;j++){
+                printf("%d ",t);
+                t--;
+            }
+            k=i+1+t;
+            printf("\n");
+        }
+        else{
+            for(int j=1;j<=i;j++){
+                printf("%d ",k);
+                k++;
+            }
+            t=i+k;
+            printf("\n");
+        }
+    }
+}
+input : 7
+output:
+1
+2 3
+6 5 4
+7 8 9 10
+15 14 13 12 11
+16 17 18 19 20 21
+28 27 26 25 24 23 22
+--------------------------------------------
+#include<stdio.h>
+int main(){
+    int inp=4;
+    int t=2;
+    int temp=1,odd=(inp*2)-1;
+    for(int i=1;i<=inp;i++){
+        for(int j=1;j<temp;j++){
+            printf(" ");
+        }
+        for(int k=1;k<=odd;k++){
+            printf("*");
+        }
+        for(int j=1;j<temp;j++){
+            printf("  ");
+        }
+        for(int k=1;k<=odd;k++){
+            printf("*");
+        }
+        odd-=2;
+        temp++;
+        printf("\n");
+    }
+    temp=inp,odd=1;
+    for(int i=1;i<=inp;i++){
+        for(int j=1;j<temp;j++){
+            printf(" ");
+        }
+        for(int k=1;k<=odd;k++){
+            printf("*");
+        }
+        for(int j=1;j<temp;j++){
+            printf("  ");
+        }
+        for(int k=1;k<=odd;k++){
+            printf("*");
+        }
+        temp--;
+        odd+=2;
+        printf("\n");
+    }
+}
+input : 4
+output:
+**************
+ *****  *****
+  ***    ***
+   *      *
+   *      *
+  ***    ***
+ *****  *****
+**************
